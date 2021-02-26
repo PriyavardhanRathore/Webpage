@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pv's Assignment</title>
+<link rel="stylesheet" type="text/css" href="Style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="PR.jfif"/> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!-- header start -->
+<header>
+    <nav>
+<ul>
+  <li><a href="#home"><i class="fa fa-fw fa-home"></i> Home</a></li>
+  <li><a href="#Search"><i class="fa fa-fw fa-search"></i> Search</a></li>
+  <li><a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+  <div class="dropdown">
+  <li><a href="#about"><i class="fa fa-fw fa-globe"></i> About<i class="fa fa-caret-down"></i></a></li>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+
+</ul>
+  </nav>
+</header>
+<!-- End header -->
+
+
+<span id = "hello">
+	<h1>HELLO!</h1>
+</span>
+
+
+
+
+<!-- Form begin -->  
+<button class="open-button" onclick="openForm()">Register</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Register</h1>
+
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Pablo Escobar">
+			
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="pablo@example.com">
+			
+			<label for="psw"><b><i class="fa fa-key"></i> Password</b></label>
+			<input type="password" id="psw" name="password" placeholder="Enter Password" required>
+			
+			<label for="DOB"><i class="fa fa-address-calendar"></i> DOB </label>
+            <input type="date" id="DOB" name="dateofbirth"><br>
+			<br>
+            <label for="city"><i class="fa fa-user"></i> Gender</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+			<label for="male">Male</label><br>
+			<input type="radio" id="female" name="gender" value="female">
+			<label for="female">Female</label><br>
+			<input type="radio" id="other" name="gender" value="other">
+			<label for="other">Other</label><br><br>
+
+
+    <button type="submit" class="btn">Sign in</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<!-- End Form -->
+
+<!-- Footer start -->
+<footer>
+  <span>Creator: Priyavardhan Rathore</span>
+  <span><a href="mailto:priyavardhanrathore@rightpoint.com">priyavardhanrathore@rightpoint.com</a></span>
+</footer>
+<!-- End Footer -->
+
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</body>
+</html>
